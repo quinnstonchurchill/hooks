@@ -13,8 +13,9 @@ function animationTimer(duration = 1000, delay = 0) {
   const [elapsed, setTime] = useState(0);
 
   // useEffect tells React to do something after render
+  // ! defaults to recreating effect after every render (can be overkill)
   // second argument is array of values that effect depends on
-  // ! defaults to recreating effect after every render (overkill)
+  // passing empty array only runs effect on first mount
   useEffect(
     () => {
       let animationFrame;

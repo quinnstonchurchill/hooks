@@ -15,11 +15,12 @@ const Link = ({ href, name }) => (
 const routes = [
   { name: 'Home', href: '/' },
   { name: 'Basic', href: '/basic' },
-  { name: 'Animations', href: '/animations' },
-  { name: 'Click Outside', href: '/click-outside' },
   { name: 'Component Size', href: '/component-size' },
+  { name: 'Click Outside', href: '/click-outside' },
+  { name: 'Animations', href: '/animations' },
   { name: 'Async', href: '/async' },
-  { name: 'Performance', href: '/performance' }
+  { name: 'Performance', href: '/performance' },
+  { name: 'Copy to Clipboard', href: '/clipboard' }
 ];
 
 export default () => (
