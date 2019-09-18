@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const DEFAULT = 'https://rickandmortyapi.com/api/character';
 
-function useFetch(endpoint = DEFAULT) {
+export default function useFetch(endpoint = DEFAULT) {
   const [data, setData] = useState({ results: [] });
   const [loading, setLoading] = useState(true);
   async function fetchData() {
